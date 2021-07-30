@@ -7,10 +7,10 @@
   align-items: stretch;
   flex-direction: column;
   background-color: #f7f7f7;
-  transition: all cubic-bezier(0.55, 0, 0.1, 1) 0.1s;
+  transition: all cubic-bezier(0.55, 0, 0.1, 1) 0.3s;
 }
 
 .side-drawer--active {
   left: 235px;
-  transition: all cubic-bezier(0.55, 0, 0.1, 1) 0.1s;
+  transition: all cubic-bezier(0.55, 0, 0.1, 1) 0.3s;
 }
