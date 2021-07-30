@@ -1,0 +1,32 @@
+.theme-button {
+  position: relative;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.theme-button > * {
+  pointer-events: none;
+}
+
+.theme-button .theme-button__icon-container {
+  display: flex;
+}
+
+.theme-button .theme-button__icon {
+  padding-bottom: 2px;
+}
+
+.theme-button[disabled] {
+  cursor: not-allowed;
+}
+
+.theme-button .theme-button__text {
+  padding-left: 10px;
+  padding-right: 10px;
+  color: #232d37;
+}

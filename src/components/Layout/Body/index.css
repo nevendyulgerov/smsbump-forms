@@ -1,0 +1,6 @@
+.body {
+  display: flex;
+  flex-grow: 1;
+  background-color: #e4e4e4;
+  overflow-y: auto;
+}

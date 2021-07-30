@@ -1,0 +1,24 @@
+.next-form-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-radius: 0;
+  background-color: #f4f6f8;
+}
+
+.next-form-button .next-form-button__col {
+  display: flex;
+  align-items: center;
+}
+
+.next-form-button .next-form-button__col:first-child {
+  flex-grow: 1;
+  flex-basis: 0;
+  justify-content: center;
+}
+
+.next-form-button .next-form-button__logo {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}

@@ -1,0 +1,30 @@
+.dropdown {
+  display: flex;
+}
+
+.dropdown .dropdown__button {
+  display: inline-flex;
+  align-items: center;
+  background-color: transparent;
+  border: 1px solid #212b35;
+  border-radius: 4px;
+  padding: 0;
+  cursor: pointer;
+}
+
+.dropdown .dropdown__button > * {
+  pointer-events: none;
+}
+
+.dropdown .dropdown__button-icon {
+  padding: 10px;
+}
+
+.dropdown .dropdown__button-icon:last-child {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.dropdown .dropdown__button-text {
+  color: #232d37;
+}

@@ -1,0 +1,32 @@
+.icon-button {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.icon-button > * {
+  pointer-events: none;
+}
+
+.icon-button .icon-button__icon-container {
+  display: flex;
+}
+
+.icon-button .icon-button__icon {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.icon-button[disabled] {
+  cursor: not-allowed;
+}
+
+.icon-button .icon-button__text {
+  padding-left: 10px;
+  padding-right: 10px;
+  color: #232d37;
+}

@@ -1,0 +1,16 @@
+.side-drawer {
+  position: absolute;
+  top: 65px;
+  left: -570px;
+  display: flex;
+  width: 335px;
+  align-items: stretch;
+  flex-direction: column;
+  background-color: #f7f7f7;
+  transition: all cubic-bezier(0.55, 0, 0.1, 1) 0.1s
+}
+
+.side-drawer--active {
+  left: 235px;
+  transition: all cubic-bezier(0.55, 0, 0.1, 1) 0.1s
+}

@@ -1,0 +1,49 @@
+.theme-menu {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 15px;
+  background-color: #f7f7f7;
+}
+
+.theme-menu__button-steps {
+  color: #606dc5;
+}
+
+.theme-menu .theme-menu__button {
+  padding: 15px 15px 10px;
+}
+
+.theme-menu .theme-menu__button--active:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: '';
+  width: 4px;
+  height: 100%;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  background-color: #606dc5;
+}
+
+.theme-menu .theme-menu__button .theme-button__icon {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.theme-menu .theme-menu__button .theme-button__text {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.theme-menu .theme-menu__selected {
+  position: absolute;
+  top: -2px;
+  left: 0;
+  right: 0;
+  width: fit-content;
+  margin: 0 auto;
+  padding: 6px 12px;
+  border-radius: 4px;
+  color: #ffffff;
+  background-color: #0122a5;
+}

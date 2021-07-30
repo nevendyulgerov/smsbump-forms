@@ -1,0 +1,85 @@
+.subheader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 11px 20px;
+  background-color: #f4f6f8;
+  overflow-y: auto;
+}
+
+.subheader .subheader__col {
+  display: flex;
+  align-items: center;
+}
+
+.subheader .subheader__col:first-child {
+  flex-grow: 1;
+  flex-basis: 0;
+}
+
+.subheader .subheader__col:nth-child(2) {
+  flex-grow: 1;
+  flex-basis: 0;
+  justify-content: center;
+}
+
+.subheader .subheader__col:last-child {
+  flex-grow: 1;
+  flex-basis: 0;
+  justify-content: flex-end;
+}
+
+.subheader .subheader__logo {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.subheader .subheader__separator {
+  width: 1px;
+  height: 34px;
+  background-color: #e2e9ef;
+}
+
+.subheader .subheader__col:first-child .subheader__separator {
+  margin-left: 1px;
+  margin-right: 50px;
+}
+
+.subheader .subheader__col:nth-child(2) .subheader__button:first-child {
+  margin-right: 15px;
+}
+
+.subheader .subheader__col:last-child .subheader__separator {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.subheader .subheader__col:last-child .subheader__icon-button:first-child {
+  margin-right: 6px;
+  margin-left: 6px;
+}
+
+.subheader .subheader__col:last-child .subheader__icon-button:nth-child(2) .icon-button__text {
+  padding-right: 0;
+  color: #c3cfd8;
+}
+
+.subheader .subheader__text {
+  padding-left: 10px;
+  padding-right: 10px;
+  color: #232d37;
+}
+
+.subheader .subheader__tabs {
+  width: 235px;
+  margin-top: -10px;
+  margin-left: -20px;
+  margin-bottom: -10px;
+}
+
+.subheader .subheader__tabs .subheader__tabs-button {
+  width: 117px;
+  height: 54px;
+  padding-left: 26px;
+  padding-right: 26px;
+}

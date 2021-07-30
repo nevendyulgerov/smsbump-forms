@@ -1,0 +1,48 @@
+.button {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  height: 34px;
+  min-width: 120px;
+  padding: 8px 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.button > * {
+  pointer-events: none;
+}
+
+.button[disabled] {
+  cursor: not-allowed;
+}
+
+.button.button--borderless {
+  border: none !important;
+}
+
+.button.button--primary {
+  color: #ffffff;
+  border: 1px solid #606dc5;
+  background-color: #606dc5;
+}
+
+.button.button--primary.button--outlined {
+  color: #606dc5;
+  border: 1px solid #606dc5;
+  background-color: transparent;
+}
+
+.button.button--secondary {
+  color: #ffffff;
+  background-color: #212b35;
+}
+
+.button.button--secondary.button--outlined {
+  color: #212b35;
+  border: 1px solid #212b35;
+  background-color: transparent;
+}
