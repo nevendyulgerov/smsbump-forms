@@ -11,24 +11,28 @@ const MainMenu: FC = () => {
 
   return (
     <div className="main-menu">
-      {mainMenuItems.map((mainMenuItem, index) => (
-        <IconButton
-          key={mainMenuItem.name}
-          icon={mainMenuItem.icon}
-          className={classNames({
-            'main-menu__button': true,
-            'main-menu__button--active': mainMenuItem.name === state.mainMenuItem?.name
-          })}
-          onClick={() => {
-            setMainMenuItem(dispatch)(mainMenuItem);
-            toggleThemeMenu(dispatch)(
-              state.mainMenuItem?.name === 'theme' && !state.isThemeMenuActive
-            );
-          }}
-        >
-          {mainMenuItem.label}
-        </IconButton>
-      ))}
+      {mainMenuItems.map((mainMenuItem, index) => {
+        const isActive = mainMenuItem.name === state.mainMenuItem?.name;
+
+        return (
+          <IconButton
+            key={mainMenuItem.name}
+            icon={isActive ? mainMenuItem.highlightedIcon : mainMenuItem.icon}
+            className={classNames({
+              'main-menu__button': true,
+              'main-menu__button--active': isActive
+            })}
+            onClick={() => {
+              setMainMenuItem(dispatch)(mainMenuItem);
+              toggleThemeMenu(dispatch)(
+                mainMenuItem.name === 'theme' && !state.isThemeMenuActive
+              );
+            }}
+          >
+            {mainMenuItem.label}
+          </IconButton>
+        );
+      })}
     </div>
   );
 };

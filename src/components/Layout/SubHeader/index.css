@@ -49,6 +49,10 @@
   margin-right: 15px;
 }
 
+.subheader .subheader__col:nth-child(2) .subheader__button:last-child {
+  font-family: 'Helvetica Neue Light', sans-serif;
+}
+
 .subheader .subheader__col:last-child .subheader__separator {
   margin-left: 20px;
   margin-right: 20px;
@@ -82,4 +86,12 @@
   height: 54px;
   padding-left: 26px;
   padding-right: 26px;
+}
+
+.subheader .subheader__tabs .subheader__tabs-button:last-child {
+  font-family: 'Helvetica Neue Light', sans-serif;
+}
+
+.subheader .subheader__icon-button .icon-button__icon {
+  height: 20px;
 }

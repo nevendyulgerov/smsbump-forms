@@ -15,9 +15,17 @@
   padding: 15px 30px;
 }
 
+.main-menu .main-menu__button .icon-button__text {
+  font-family: 'Helvetica Neue Bold', sans-serif;
+}
+
 .main-menu .main-menu__button:hover,
 .main-menu .main-menu__button--active {
   background-color: #f7f7f7;
+}
+
+.main-menu .main-menu__button--active .icon-button__text {
+  color: #606dc5;
 }
 
 .main-menu .main-menu__button--active:before {

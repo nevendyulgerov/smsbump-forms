@@ -1,6 +1,5 @@
 import React, { FC, HtmlHTMLAttributes } from 'react';
 import classNames from 'classnames';
-import circleIcon from '../../../assets/icons/circle.svg';
 import chevronDownIcon from '../../../assets/icons/chevron-down.svg';
 import './index.css';
 
@@ -21,12 +20,6 @@ const Dropdown: FC<DropdownProps> = (props) => {
       })}
     >
       <button className="dropdown__button">
-        <img
-          src={circleIcon}
-          alt="button-circle-icon"
-          className="dropdown__button-icon"
-        />
-
         <span className="dropdown__button-text">
           {children}
         </span>

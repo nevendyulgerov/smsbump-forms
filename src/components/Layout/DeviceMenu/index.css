@@ -11,3 +11,11 @@
 .device-menu .device-menu__button {
   padding: 7px 12px;
 }
+
+.device-menu .device-menu__button .icon-button__icon {
+  height: 16px;
+}
+
+.device-menu .device-menu__button--active svg {
+  fill: #606dc5;
+}

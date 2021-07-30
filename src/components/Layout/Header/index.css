@@ -38,3 +38,7 @@
   padding-right: 10px;
   color: #232d37;
 }
+
+.header .header__button .icon-button__icon {
+  width: 15px;
+}

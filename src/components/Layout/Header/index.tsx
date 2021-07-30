@@ -16,7 +16,10 @@ const Header: FC = () => (
 
       <div className="header__separator" />
 
-      <IconButton icon={penIcon}>
+      <IconButton
+        icon={penIcon}
+        className="header__button"
+      >
         Form 1
       </IconButton>
     </div>
@@ -28,7 +31,10 @@ const Header: FC = () => (
 
       <div className="header__separator" />
 
-      <IconButton icon={exitIcon}>
+      <IconButton
+        icon={exitIcon}
+        className="header__button"
+      >
         Exit
       </IconButton>
     </div>
