@@ -1,9 +1,9 @@
 import React, { FC, useContext } from 'react';
-import { ThemeButton } from '../../Base';
 import themeMenuItems from '../../../config/themeMenuItems';
-import './index.css';
 import { AppContext } from '../../../context';
 import { setTheme } from '../../../context/actions';
+import { ThemeButton } from '../../Base';
+import './index.css';
 
 const ThemeMenu: FC = () => {
   const [state, dispatch] = useContext(AppContext);

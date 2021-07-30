@@ -10,7 +10,8 @@ interface IconButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
 
 const IconButton: FC<IconButtonProps> = (props) => {
   const { children, icon, className, ...restProps } = props;
-  const hasChildren = typeof children === 'object' || typeof children === 'string';
+  const hasChildren = typeof children === 'object'
+    || typeof children === 'string';
 
   return (
     <button

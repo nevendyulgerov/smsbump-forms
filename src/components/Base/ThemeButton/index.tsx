@@ -1,4 +1,4 @@
-import React, { FC, ButtonHTMLAttributes, Children } from 'react';
+import React, { FC, ButtonHTMLAttributes } from 'react';
 import classNames from 'classnames';
 import './index.css';
 
@@ -10,7 +10,8 @@ interface ThemeButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
 
 const ThemeButton: FC<ThemeButtonProps> = (props) => {
   const { children, icon, className, ...restProps } = props;
-  const hasChildren = Children.count(children) !== null;
+  const hasChildren = typeof children === 'object'
+    || typeof children === 'string';
 
   return (
     <button

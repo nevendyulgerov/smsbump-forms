@@ -5,11 +5,11 @@
 .dropdown .dropdown__button {
   display: inline-flex;
   align-items: center;
-  background-color: transparent;
-  border: 1px solid #212b35;
   border-radius: 4px;
   padding: 0;
   cursor: pointer;
+  background-color: transparent;
+  border: 1px solid #212b35;
 }
 
 .dropdown .dropdown__button > * {
