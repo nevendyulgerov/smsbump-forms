@@ -13,17 +13,7 @@
   padding: 7px 12px;
 }
 
-.device-menu .device-menu__button .icon-button__icon {
-  height: 16px;
-}
-
 .device-menu .device-menu__button--active svg {
   fill: #606dc5;
   stroke: #606dc5;
-}
-
-@media (max-width: 620px) {
-  .device-menu {
-    justify-content: space-between;
-  }
 }
