@@ -10,7 +10,7 @@
 
 .subheader::-webkit-scrollbar {
   height: 8px;
-  background-color: #ffffff;
+  background-color: #f4f6f8;
 }
 
 .subheader::-webkit-scrollbar-thumb {
