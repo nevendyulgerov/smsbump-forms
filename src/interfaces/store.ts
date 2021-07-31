@@ -5,7 +5,7 @@ export interface Store {
   theme: ThemeMenuItem;
   device: string;
   mainMenuItem: MainMenuItem | null;
-  isThemeMenuActive: boolean;
+  isSideMenuActive: boolean;
 }
 
 export interface SetThemeAction {
@@ -25,5 +25,5 @@ export interface SetMainMenuItemAction {
 
 export interface ToggleThemeMenuAction {
   type: string,
-  isThemeMenuActive: boolean;
+  isSideMenuActive: boolean;
 }

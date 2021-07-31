@@ -8,14 +8,14 @@ const Preview: FC = () => {
   const refComponent = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    if (state.isThemeMenuActive && refComponent.current !== null) {
+    if (state.isSideMenuActive && refComponent.current !== null) {
       refComponent.current.scrollIntoView({
         behavior: 'smooth',
         block: 'start',
         inline: 'start',
       })
     }
-  }, [state.isThemeMenuActive])
+  }, [state.isSideMenuActive])
 
   return (
     <div

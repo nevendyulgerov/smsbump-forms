@@ -2,7 +2,7 @@ import React, { FC, useContext } from 'react';
 import { FormattedMessage } from 'react-intl';
 import classNames from 'classnames';
 import mainMenuItems from '../../../config/mainMenuItems';
-import { setMainMenuItem, toggleThemeMenu } from '../../../context/actions';
+import { setMainMenuItem, toggleSideMenu } from '../../../context/actions';
 import { AppContext } from '../../../context';
 import { Icon, IconButton } from '../../Base';
 import messages from './messages';
@@ -25,9 +25,9 @@ const MainMenu: FC = () => {
             setMainMenuItem(dispatch)(mainMenuItem);
 
             const nextIsThemeMenuActive = mainMenuItem.name === 'theme'
-              && !state.isThemeMenuActive;
+              && !state.isSideMenuActive;
 
-            toggleThemeMenu(dispatch)(nextIsThemeMenuActive);
+            toggleSideMenu(dispatch)(nextIsThemeMenuActive);
           }}
         >
           <FormattedMessage {...messages[mainMenuItem.name]} />

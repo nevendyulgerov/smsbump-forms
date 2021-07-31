@@ -12,14 +12,14 @@ import {
   SET_DEVICE,
   SET_MAIN_MENU_ITEM,
   SET_THEME,
-  TOGGLE_THEME_MENU
+  TOGGLE_SIDE_MENU
 } from './types';
 
 export const initialState = {
   theme: themeMenuItems[0],
   device: 'desktop',
   mainMenuItem: mainMenuItems[0],
-  isThemeMenuActive: false
+  isSideMenuActive: false
 }
 
 type Action = SetThemeAction
@@ -44,10 +44,10 @@ const reducer = (state: Store, action: Action) => {
         ...state,
         mainMenuItem: (action as SetMainMenuItemAction).mainMenuItem
       }
-    case TOGGLE_THEME_MENU:
+    case TOGGLE_SIDE_MENU:
       return {
         ...state,
-        isThemeMenuActive: (action as ToggleThemeMenuAction).isThemeMenuActive
+        isSideMenuActive: (action as ToggleThemeMenuAction).isSideMenuActive
       };
     default:
       return state;

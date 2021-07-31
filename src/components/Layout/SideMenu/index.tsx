@@ -12,7 +12,7 @@ const SideMenu: FC<{
     <div
       className={classNames({
         'side-menu': true,
-        'side-menu--active': state.isThemeMenuActive
+        'side-menu--active': state.isSideMenuActive
       })}
     >
       {children}

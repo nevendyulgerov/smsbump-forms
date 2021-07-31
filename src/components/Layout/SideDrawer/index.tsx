@@ -12,7 +12,7 @@ const SideDrawer: FC<{
     <div
       className={classNames({
         'side-drawer': true,
-        'side-drawer--active': state.isThemeMenuActive
+        'side-drawer--active': state.isSideMenuActive
       })}
     >
       {children}

@@ -6,7 +6,7 @@ import {
   SET_DEVICE,
   SET_MAIN_MENU_ITEM,
   SET_THEME,
-  TOGGLE_THEME_MENU
+  TOGGLE_SIDE_MENU
 } from './types';
 
 export const setTheme = (dispatch: Dispatch<SetThemeAction>) => (theme: ThemeMenuItem) => (
@@ -30,9 +30,9 @@ export const setMainMenuItem = (dispatch: Dispatch<SetMainMenuItemAction>) => (m
   })
 );
 
-export const toggleThemeMenu = (dispatch: Dispatch<ToggleThemeMenuAction>) => (isThemeMenuActive: boolean) => (
+export const toggleSideMenu = (dispatch: Dispatch<ToggleThemeMenuAction>) => (isSideMenuActive: boolean) => (
   dispatch({
-    type: TOGGLE_THEME_MENU,
-    isThemeMenuActive
+    type: TOGGLE_SIDE_MENU,
+    isSideMenuActive
   })
 );
