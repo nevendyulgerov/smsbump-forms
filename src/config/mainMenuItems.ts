@@ -2,34 +2,34 @@ import { MainMenuItem as MainMenuItemInterface } from '../interfaces/menu';
 
 const mainMenuItems: MainMenuItemInterface[] = [{
   name: 'theme',
-  label: 'Theme'
+  icon: 'theme'
 }, {
   name: 'form',
-  label: 'Form'
+  icon: 'form'
 }, {
   name: 'text',
-  label: 'Text'
+  icon: 'text'
 }, {
-  name: 'phone-field',
-  label: 'Phone Field'
+  name: 'phoneField',
+  icon: 'phone-field'
 }, {
-  name: 'email-field',
-  label: 'Email Field'
+  name: 'emailField',
+  icon: 'email-field'
 }, {
-  name: 'name-field',
-  label: 'Name Field'
+  name: 'nameField',
+  icon: 'name-field'
 }, {
-  name: 'button-field',
-  label: 'Button Field'
+  name: 'buttonField',
+  icon: 'button-field'
 }, {
   name: 'checkbox',
-  label: 'Checkbox'
+  icon: 'checkbox'
 }, {
-  name: 'close-button',
-  label: 'Close Button'
+  name: 'closeButton',
+  icon: 'close-button'
 }, {
   name: 'compliance',
-  label: 'Compliance'
+  icon: 'compliance'
 }];
 
 export default mainMenuItems;

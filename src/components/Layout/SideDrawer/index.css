@@ -6,6 +6,7 @@
   width: 352px;
   align-items: stretch;
   flex-direction: column;
+  border-left: 1px solid #efefef;
   background-color: #f7f7f7;
   transition: all cubic-bezier(0.55, 0, 0.1, 1) 0.3s;
 }
@@ -17,7 +18,7 @@
 
 @media (max-width: 620px) {
   .side-drawer.side-drawer--active {
-    top: 64px;
+    top: 69px;
     left: 80px;
     transition: all cubic-bezier(0.55, 0, 0.1, 1) 0.3s;
   }

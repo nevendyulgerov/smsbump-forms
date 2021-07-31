@@ -1,9 +1,11 @@
 import React, { FC, useContext } from 'react';
+import { FormattedMessage } from 'react-intl';
 import classNames from 'classnames';
 import mainMenuItems from '../../../config/mainMenuItems';
 import { setMainMenuItem, toggleThemeMenu } from '../../../context/actions';
 import { AppContext } from '../../../context';
 import { Icon, IconButton } from '../../Base';
+import messages from './messages';
 import './index.css';
 
 const MainMenu: FC = () => {
@@ -14,7 +16,7 @@ const MainMenu: FC = () => {
       {mainMenuItems.map((mainMenuItem, index) => (
         <IconButton
           key={mainMenuItem.name}
-          icon={<Icon id={mainMenuItem.name} />}
+          icon={<Icon id={mainMenuItem.icon} />}
           className={classNames({
             'main-menu__button': true,
             'main-menu__button--active': mainMenuItem.name === state.mainMenuItem?.name
@@ -28,7 +30,7 @@ const MainMenu: FC = () => {
             toggleThemeMenu(dispatch)(nextIsThemeMenuActive);
           }}
         >
-          {mainMenuItem.label}
+          <FormattedMessage {...messages[mainMenuItem.name]} />
         </IconButton>
       ))}
     </div>

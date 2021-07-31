@@ -12,27 +12,33 @@ import {
   SubHeader,
   ThemeMenu
 } from './components/Layout';
+import { IntlProvider } from 'react-intl';
 
 const App: FC = () => (
-  <Container>
-    <Header />
-    <SubHeader />
+  <IntlProvider
+    locale="en"
+    messages={{}}
+  >
+    <Container>
+      <Header />
+      <SubHeader />
 
-    <Body>
-      <SideMenu>
-        <DeviceMenu />
-        <MainMenu />
+      <Body>
+        <SideMenu>
+          <DeviceMenu />
+          <MainMenu />
 
-        <SideDrawer>
-          <ThemeMenu />
-        </SideDrawer>
+          <SideDrawer>
+            <ThemeMenu />
+          </SideDrawer>
 
-        <NextFormButton />
-      </SideMenu>
+          <NextFormButton />
+        </SideMenu>
 
-      <Preview />
-    </Body>
-  </Container>
+        <Preview />
+      </Body>
+    </Container>
+  </IntlProvider>
 );
 
 export default App;

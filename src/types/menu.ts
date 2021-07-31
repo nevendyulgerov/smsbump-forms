@@ -1,12 +1,12 @@
 export type MainMenuItem = 'theme'
   | 'form'
   | 'text'
-  | 'phone-field'
-  | 'email-field'
-  | 'name-field'
-  | 'button-field'
+  | 'phoneField'
+  | 'emailField'
+  | 'nameField'
+  | 'buttonField'
   | 'checkbox'
-  | 'close-button'
+  | 'closeButton'
   | 'compliance';
 
 export type ThemeMenuItem = 'be-an-ecommerce-expert'

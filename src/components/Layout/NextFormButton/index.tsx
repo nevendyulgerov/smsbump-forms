@@ -1,5 +1,7 @@
 import React, { FC } from 'react';
+import { FormattedMessage } from 'react-intl';
 import { Button, Icon } from '../../Base';
+import messages from './messages';
 import './index.css';
 
 const NextFormButton: FC = () => (
@@ -9,7 +11,7 @@ const NextFormButton: FC = () => (
     borderless
   >
     <div className="next-form-button__col">
-      Next Form
+      <FormattedMessage {...messages.nextForm} />
     </div>
 
     <div className="next-form-button__col">

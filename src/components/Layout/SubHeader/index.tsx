@@ -1,5 +1,7 @@
 import React, { FC } from 'react';
+import { FormattedMessage } from 'react-intl';
 import { IconButton, Button, Icon } from '../../Base';
+import messages from './messages';
 import './index.css';
 
 const SubHeader: FC = () => (
@@ -11,7 +13,8 @@ const SubHeader: FC = () => (
           className="subheader__tabs-button"
           borderless
         >
-          1.Design
+          1.
+          <FormattedMessage {...messages.design} />
         </Button>
 
         <Button
@@ -20,7 +23,8 @@ const SubHeader: FC = () => (
           outlined
           borderless
         >
-          2.Behavior
+          2.
+          <FormattedMessage {...messages.behavior} />
         </Button>
       </Button.Group>
 
@@ -32,7 +36,10 @@ const SubHeader: FC = () => (
         color="primary"
         className="subheader__button"
       >
-        Form 1
+        <FormattedMessage
+          {...messages.formCount}
+          values={{ count: 1 }}
+        />
       </Button>
 
       <Button
@@ -40,7 +47,7 @@ const SubHeader: FC = () => (
         className="subheader__button"
         outlined
       >
-        Success
+        <FormattedMessage {...messages.success} />
       </Button>
     </div>
 
@@ -49,14 +56,15 @@ const SubHeader: FC = () => (
         icon={<Icon id="undo" />}
         className="subheader__icon-button"
       >
-        Undo
+        <FormattedMessage {...messages.undo} />
       </IconButton>
 
       <IconButton
         icon={<Icon id="redo" />}
+        disabled
         className="subheader__icon-button"
       >
-        Redo
+        <FormattedMessage {...messages.redo} />
       </IconButton>
 
       <div className="subheader__separator" />
@@ -65,7 +73,7 @@ const SubHeader: FC = () => (
         icon={<Icon id="trash" />}
         className="subheader__icon-button"
       >
-        Delete Element
+        <FormattedMessage {...messages.deleteElement} />
       </IconButton>
     </div>
   </div>

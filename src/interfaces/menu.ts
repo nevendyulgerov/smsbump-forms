@@ -3,7 +3,7 @@ import { Device } from '../types/device';
 
 export interface MainMenuItem {
   name: MainMenuItemType;
-  label: string;
+  icon: string;
 }
 
 export interface DeviceMenuItem {

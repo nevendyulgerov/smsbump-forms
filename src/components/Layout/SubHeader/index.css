@@ -79,11 +79,6 @@
   color: #c3cfd8;
 }
 
-.subheader .subheader__col:last-child .subheader__icon-button:nth-child(2) .icon {
-  fill: #c3cfd8;
-  stroke: #c3cfd8;
-}
-
 .subheader .subheader__text {
   padding-left: 10px;
   padding-right: 10px;

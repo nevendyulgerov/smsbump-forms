@@ -27,6 +27,15 @@
   cursor: not-allowed;
 }
 
+.icon-button[disabled] .icon {
+  fill: #c3cfd8;
+  stroke: #c3cfd8;
+}
+
+.icon-button[disabled] .icon-button__text {
+  color: #c3cfd8;
+}
+
 .icon-button .icon-button__text {
   font-family: 'Helvetica Neue Light', sans-serif;
   padding-left: 2px;

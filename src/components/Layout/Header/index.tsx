@@ -1,6 +1,8 @@
 import React, { FC } from 'react';
+import { FormattedMessage } from 'react-intl';
 import logoIcon from '../../../assets/icons/logo.svg';
 import { Dropdown, Icon, IconButton } from '../../Base';
+import messages from './messages';
 import './index.css';
 
 const Header: FC = () => (
@@ -18,13 +20,16 @@ const Header: FC = () => (
         icon={<Icon id="pen" />}
         className="header__button"
       >
-        Form 1
+        <FormattedMessage
+          {...messages.formCount}
+          values={{ count: 1}}
+        />
       </IconButton>
     </div>
 
     <div className="header__col">
       <Dropdown>
-        Draft
+        <FormattedMessage {...messages.draft} />
       </Dropdown>
 
       <div className="header__separator" />
@@ -33,7 +38,7 @@ const Header: FC = () => (
         icon={<Icon id="exit" />}
         className="header__button"
       >
-        Exit
+        <FormattedMessage {...messages.exit} />
       </IconButton>
     </div>
   </div>
