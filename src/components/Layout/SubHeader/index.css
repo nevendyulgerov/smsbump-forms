@@ -5,6 +5,17 @@
   padding: 11px 20px;
   background-color: #f4f6f8;
   overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.subheader::-webkit-scrollbar {
+  height: 8px;
+  background-color: #ffffff;
+}
+
+.subheader::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: #606dc5;
 }
 
 .subheader .subheader__col {

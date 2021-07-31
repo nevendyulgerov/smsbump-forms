@@ -4,7 +4,18 @@
   align-items: center;
   padding: 15px 20px;
   overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
   background-color: #ffffff;
+}
+
+.header::-webkit-scrollbar {
+  height: 8px;
+  background-color: #ffffff;
+}
+
+.header::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: #606dc5;
 }
 
 .header .header__col {
@@ -25,6 +36,10 @@
 
 .header .header__col:first-child .header__separator {
   margin-left: 50px;
+  margin-right: 50px;
+}
+
+.header .header__col:first-child .icon-button {
   margin-right: 50px;
 }
 
