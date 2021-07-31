@@ -18,5 +18,9 @@ export default defineMessages({
   editForm: {
     id: `${scope}.editForm`,
     defaultMessage: 'Edit {form}'
+  },
+  goToSmsBumpWebsite: {
+    id: `${scope}.goToSmsBumpWebsite`,
+    defaultMessage: 'Go to SMSBump website'
   }
 });

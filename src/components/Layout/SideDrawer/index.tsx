@@ -1,7 +1,7 @@
 import React, { FC, useContext } from 'react';
 import classNames from 'classnames';
-import './index.css';
 import { AppContext } from '../../../context';
+import './index.css';
 
 const SideDrawer: FC<{
   children: React.ReactNode | React.ReactNodeArray;

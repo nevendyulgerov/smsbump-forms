@@ -16,6 +16,18 @@
   url('./assets/fonts/Helvetica-Neue-Bold.woff') format('woff');
 }
 
+@keyframes FadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 20px, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
 html,
 body {
   height: 100%;

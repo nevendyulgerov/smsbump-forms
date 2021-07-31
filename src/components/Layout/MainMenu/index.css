@@ -6,8 +6,8 @@
   flex-direction: column;
   padding-top: 15px;
   padding-bottom: 15px;
-  z-index: 10;
   background-color: #ffffff;
+  z-index: 30;
 }
 
 .main-menu .main-menu__button {

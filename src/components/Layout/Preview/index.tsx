@@ -25,7 +25,9 @@ const Preview: FC = () => {
         [`preview--${state.device}`]: true
       })}
     >
-      <div className="preview__container">
+      <div className="preview__container" />
+
+      <div className="preview__image">
         <img
           src={state.theme.icon}
           alt={state.theme.name}

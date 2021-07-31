@@ -1,7 +1,7 @@
 .side-drawer {
   position: absolute;
   top: 65px;
-  left: -570px;
+  left: -280px;
   display: flex;
   width: 352px;
   align-items: stretch;
@@ -9,6 +9,7 @@
   border-left: 1px solid #efefef;
   background-color: #f7f7f7;
   transition: all cubic-bezier(0.55, 0, 0.1, 1) 0.3s;
+  z-index: 20;
 }
 
 .side-drawer.side-drawer--active {

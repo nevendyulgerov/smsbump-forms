@@ -11,11 +11,18 @@ const Header: FC = () => {
   return (
     <div className="header">
       <div className="header__col">
-        <img
-          src={logoIcon}
-          alt="logo"
-          className="header__logo"
-        />
+        <a
+          href="https://smsbump.com/"
+          target="_blank"
+          rel="noreferrer"
+          title={intl.formatMessage(messages.goToSmsBumpWebsite)}
+        >
+          <img
+            src={logoIcon}
+            alt="logo"
+            className="header__logo"
+          />
+        </a>
 
         <div className="header__separator" />
 
