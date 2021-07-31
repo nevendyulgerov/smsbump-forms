@@ -27,4 +27,5 @@
 
 .preview img {
   width: 444px;
+  max-width: 100%;
 }

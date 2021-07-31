@@ -1,8 +1,5 @@
 import React, { FC } from 'react';
-import undoIcon from '../../../assets/icons/undo.svg';
-import redoIcon from '../../../assets/icons/redo.svg';
-import trashIcon from '../../../assets/icons/trash.svg';
-import { IconButton, Button } from '../../Base';
+import { IconButton, Button, Icon } from '../../Base';
 import './index.css';
 
 const SubHeader: FC = () => (
@@ -49,14 +46,14 @@ const SubHeader: FC = () => (
 
     <div className="subheader__col">
       <IconButton
-        icon={undoIcon}
+        icon={<Icon id="undo" />}
         className="subheader__icon-button"
       >
         Undo
       </IconButton>
 
       <IconButton
-        icon={redoIcon}
+        icon={<Icon id="redo" />}
         className="subheader__icon-button"
       >
         Redo
@@ -65,7 +62,7 @@ const SubHeader: FC = () => (
       <div className="subheader__separator" />
 
       <IconButton
-        icon={trashIcon}
+        icon={<Icon id="trash" />}
         className="subheader__icon-button"
       >
         Delete Element

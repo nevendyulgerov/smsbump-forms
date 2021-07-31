@@ -1,8 +1,6 @@
 import React, { FC } from 'react';
 import logoIcon from '../../../assets/icons/logo.svg';
-import penIcon from '../../../assets/icons/pen.svg';
-import exitIcon from '../../../assets/icons/exit.svg';
-import { Dropdown, IconButton } from '../../Base';
+import { Dropdown, Icon, IconButton } from '../../Base';
 import './index.css';
 
 const Header: FC = () => (
@@ -17,7 +15,7 @@ const Header: FC = () => (
       <div className="header__separator" />
 
       <IconButton
-        icon={penIcon}
+        icon={<Icon id="pen" />}
         className="header__button"
       >
         Form 1
@@ -32,7 +30,7 @@ const Header: FC = () => (
       <div className="header__separator" />
 
       <IconButton
-        icon={exitIcon}
+        icon={<Icon id="exit" />}
         className="header__button"
       >
         Exit

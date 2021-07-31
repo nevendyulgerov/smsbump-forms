@@ -22,3 +22,10 @@
   padding-top: 5px;
   padding-bottom: 5px;
 }
+
+.next-form-button .icon {
+  width: 1.125rem;
+  height: 1.125rem;
+  fill: #ffffff;
+  stroke: #ffffff;
+}

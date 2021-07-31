@@ -3,7 +3,7 @@
   top: 65px;
   left: -570px;
   display: flex;
-  width: 335px;
+  width: 352px;
   align-items: stretch;
   flex-direction: column;
   background-color: #f7f7f7;
@@ -13,4 +13,12 @@
 .side-drawer--active {
   left: 235px;
   transition: all cubic-bezier(0.55, 0, 0.1, 1) 0.3s;
+}
+
+@media (max-width: 620px) {
+  .side-drawer--active {
+    top: 80px;
+    left: 150px;
+    transition: all cubic-bezier(0.55, 0, 0.1, 1) 0.3s;
+  }
 }

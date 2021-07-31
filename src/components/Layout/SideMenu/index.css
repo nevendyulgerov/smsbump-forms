@@ -6,3 +6,9 @@
   flex-direction: column;
   background-color: #ffffff;
 }
+
+@media (max-width: 620px) {
+  .side-menu {
+    width: 150px;
+  }
+}

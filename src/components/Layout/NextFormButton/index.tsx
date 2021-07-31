@@ -1,6 +1,5 @@
 import React, { FC } from 'react';
-import rightArrowIcon from '../../../assets/icons/right-arrow.svg';
-import { Button } from '../../Base';
+import { Button, Icon } from '../../Base';
 import './index.css';
 
 const NextFormButton: FC = () => (
@@ -14,10 +13,7 @@ const NextFormButton: FC = () => (
     </div>
 
     <div className="next-form-button__col">
-      <img
-        src={rightArrowIcon}
-        alt="right-arrow"
-      />
+      <Icon id="arrow-right" />
     </div>
   </Button>
 );

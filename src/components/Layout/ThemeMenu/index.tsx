@@ -12,12 +12,12 @@ const ThemeMenu: FC = () => {
     <div className="theme-menu">
       {themeMenuItems.map((themeMenuItem, index) => (
         <ThemeButton
-          key={themeMenuItem.name}
+          key={`${themeMenuItem.name}-${themeMenuItem.steps}`}
           icon={themeMenuItem.icon}
           className="theme-menu__button"
           onClick={() => setTheme(dispatch)(themeMenuItem)}
         >
-          <span>This for has </span>
+          <span className="theme-menu__button-label">This form has </span>
           <span className="theme-menu__button-steps">
             {themeMenuItem.steps} steps
           </span>

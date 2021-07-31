@@ -4,15 +4,11 @@ import { Device } from '../types/device';
 export interface MainMenuItem {
   name: MainMenuItemType;
   label: string;
-  icon: string;
-  highlightedIcon: string;
 }
 
 export interface DeviceMenuItem {
   name: Device,
   label: string;
-  icon: string;
-  highlightedIcon: string;
 }
 
 export interface ThemeMenuItem {

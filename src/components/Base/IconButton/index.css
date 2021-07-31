@@ -6,6 +6,7 @@
   border: none;
   padding: 0;
   cursor: pointer;
+  width: max-content;
 }
 
 .icon-button > * {
@@ -16,7 +17,7 @@
   display: flex;
 }
 
-.icon-button .icon-button__icon {
+.icon-button .icon-button__icon-container * {
   width: 26px;
   padding-top: 5px;
   padding-bottom: 5px;

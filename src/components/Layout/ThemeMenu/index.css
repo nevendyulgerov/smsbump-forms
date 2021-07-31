@@ -30,7 +30,12 @@
   padding-bottom: 0;
 }
 
+.theme-menu .theme-menu__button-label {
+  font-family: 'Helvetica Neue Light', sans-serif;
+}
+
 .theme-menu .theme-menu__button .theme-button__text {
+  margin-top: 2px;
   padding-left: 0;
   padding-right: 0;
 }

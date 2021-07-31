@@ -18,6 +18,7 @@
 }
 
 .theme-button .theme-button__icon {
+  max-width: 100%;
   padding-bottom: 2px;
 }
 

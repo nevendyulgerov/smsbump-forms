@@ -15,6 +15,11 @@
   padding: 15px 30px;
 }
 
+.main-menu .main-menu__button .icon {
+  width: 1.75rem;
+  height: 1.75rem;
+}
+
 .main-menu .main-menu__button .icon-button__text {
   font-family: 'Helvetica Neue Bold', sans-serif;
 }
@@ -26,6 +31,11 @@
 
 .main-menu .main-menu__button--active .icon-button__text {
   color: #606dc5;
+}
+
+.main-menu .main-menu__button--active .icon {
+  fill: #606dc5;
+  stroke: #606dc5;
 }
 
 .main-menu .main-menu__button--active:before {
@@ -47,4 +57,14 @@
 
 .main-menu .main-menu__button .icon-button__icon-container {
   min-width: 36px;
+}
+
+@media (max-width: 620px) {
+  .main-menu {
+    width: 150px;
+  }
+
+  .main-menu .main-menu__button .icon-button__text {
+    display: none;
+  }
 }

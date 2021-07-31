@@ -4,7 +4,7 @@ import './index.css';
 
 interface IconButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   children?: React.ReactNode;
-  icon: string;
+  icon: React.ReactNode;
   className?: string;
 }
 
@@ -22,11 +22,7 @@ const IconButton: FC<IconButtonProps> = (props) => {
       })}
     >
       <div className="icon-button__icon-container">
-        <img
-          src={icon}
-          alt="button-icon"
-          className="icon-button__icon"
-        />
+        {icon}
       </div>
 
       {hasChildren && (

@@ -60,12 +60,17 @@
 
 .subheader .subheader__col:last-child .subheader__icon-button:first-child {
   margin-right: 6px;
-  margin-left: 6px;
+  margin-left: 50px;
 }
 
 .subheader .subheader__col:last-child .subheader__icon-button:nth-child(2) .icon-button__text {
   padding-right: 0;
   color: #c3cfd8;
+}
+
+.subheader .subheader__col:last-child .subheader__icon-button:nth-child(2) .icon {
+  fill: #c3cfd8;
+  stroke: #c3cfd8;
 }
 
 .subheader .subheader__text {

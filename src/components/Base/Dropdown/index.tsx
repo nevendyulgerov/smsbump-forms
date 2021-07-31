@@ -1,7 +1,7 @@
 import React, { FC, HtmlHTMLAttributes } from 'react';
 import classNames from 'classnames';
-import chevronDownIcon from '../../../assets/icons/chevron-down.svg';
 import './index.css';
+import Icon from '../Icon';
 
 interface DropdownProps extends HtmlHTMLAttributes<HTMLDivElement> {
   children: React.ReactNode;
@@ -24,11 +24,7 @@ const Dropdown: FC<DropdownProps> = (props) => {
           {children}
         </span>
 
-        <img
-          src={chevronDownIcon}
-          alt="button-arrow-icon"
-          className="dropdown__button-icon"
-        />
+        <Icon id="chevron-down" />
       </button>
     </div>
   );
