@@ -1,5 +1,6 @@
 {
   "components.Layout.Header.draft": "Draft",
+  "components.Layout.Header.editForm": "Edit {form}",
   "components.Layout.Header.exit": "Exit",
   "components.Layout.Header.formCount": "Form {count}",
   "components.Layout.MainMenu.buttonField": "Button Field",
