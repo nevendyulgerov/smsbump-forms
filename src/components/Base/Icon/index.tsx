@@ -1,14 +1,15 @@
-import React from 'react';
+import React, { HTMLAttributes } from 'react';
 import classNames from 'classnames';
 import iconsSprite from '../../../assets/icons/sprite.svg';
 import './index.css';
 
-const Icon: React.FunctionComponent<{
+interface IconProps extends HTMLAttributes<SVGElement> {
   id: string;
-  className?: string | null;
-  [key: string]: unknown;
-}> = (props) => {
-  const { id, className, ...restProps } = props;
+  className?: string | undefined;
+}
+
+const Icon: React.FunctionComponent<IconProps> = (props) => {
+  const { id, className = undefined, ...restProps } = props;
 
   return (
     <svg
