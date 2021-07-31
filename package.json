@@ -11,6 +11,7 @@
     "@types/react": "^17.0.0",
     "@types/react-dom": "^17.0.0",
     "classnames": "^2.3.1",
+    "extract-react-intl-messages": "^4.1.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-intl": "^5.20.6",
@@ -21,7 +22,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "messages": "cross-env NODE_ENV=development extract-messages -l=en -o src/locales -d en --flat true 'src/**/**/**/messages.ts'"
   },
   "eslintConfig": {
     "extends": [
