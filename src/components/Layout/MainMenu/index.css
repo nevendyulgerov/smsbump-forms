@@ -54,3 +54,17 @@
 .main-menu .main-menu__button .icon-button__icon-container {
   min-width: 36px;
 }
+
+@media (max-width: 620px) {
+  .main-menu {
+    width: 80px;
+  }
+
+  .main-menu .main-menu__button {
+    padding-left: 26px;
+  }
+
+  .main-menu .main-menu__button .icon-button__text {
+    display: none;
+  }
+}

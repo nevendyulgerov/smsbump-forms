@@ -1,12 +1,23 @@
-import React, { FC } from 'react';
+import React, { FC, useContext } from 'react';
+import classNames from 'classnames';
+import { AppContext } from '../../../context';
 import './index.css';
 
 const SideMenu: FC<{
   children: React.ReactNode | React.ReactNodeArray;
-}> = ({ children }) => (
-  <div className="side-menu">
-    {children}
-  </div>
-);
+}> = ({ children }) => {
+  const [state] = useContext(AppContext);
+
+  return (
+    <div
+      className={classNames({
+        'side-menu': true,
+        'side-menu--active': state.isThemeMenuActive
+      })}
+    >
+      {children}
+    </div>
+  );
+};
 
 export default SideMenu;

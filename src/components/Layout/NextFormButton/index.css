@@ -13,9 +13,22 @@
 }
 
 .next-form-button .next-form-button__col:first-child {
-  flex-grow: 1;
+  flex-grow: 2;
+  flex-basis: 0;
+  justify-content: flex-end;
+}
+
+.next-form-button .next-form-button__col:nth-child(2) {
+  flex-grow: 0;
   flex-basis: 0;
   justify-content: center;
+  margin-left: 2px;
+}
+
+.next-form-button .next-form-button__col:last-child {
+  flex-grow: 1;
+  flex-basis: 0;
+  justify-content: flex-end;
 }
 
 .next-form-button .next-form-button__logo {
@@ -28,4 +41,22 @@
   height: 1.125rem;
   fill: #ffffff;
   stroke: #ffffff;
+}
+
+@media (max-width: 620px) {
+  .next-form-button {
+    min-width: 80px;
+    padding: 20px 16px;
+  }
+
+  .next-form-button .next-form-button__col:first-child {
+    flex-grow: 0;
+    display: none;
+    margin-right: 8px;
+  }
+
+  .next-form-button .next-form-button__col:last-child {
+    flex-grow: 0;
+    flex-basis: 0;
+  }
 }

@@ -10,7 +10,15 @@
   transition: all cubic-bezier(0.55, 0, 0.1, 1) 0.3s;
 }
 
-.side-drawer--active {
+.side-drawer.side-drawer--active {
   left: 235px;
   transition: all cubic-bezier(0.55, 0, 0.1, 1) 0.3s;
+}
+
+@media (max-width: 620px) {
+  .side-drawer.side-drawer--active {
+    top: 64px;
+    left: 80px;
+    transition: all cubic-bezier(0.55, 0, 0.1, 1) 0.3s;
+  }
 }

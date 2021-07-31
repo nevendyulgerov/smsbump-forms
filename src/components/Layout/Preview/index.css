@@ -14,7 +14,8 @@
 }
 
 .preview.preview--desktop .preview__container {
-  width: 100%;
+  width: 1024px;
+  min-width: 100%;
 }
 
 .preview.preview--tablet .preview__container {

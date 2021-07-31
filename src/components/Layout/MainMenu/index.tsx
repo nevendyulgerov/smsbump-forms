@@ -21,9 +21,11 @@ const MainMenu: FC = () => {
           })}
           onClick={() => {
             setMainMenuItem(dispatch)(mainMenuItem);
-            toggleThemeMenu(dispatch)(
-              mainMenuItem.name === 'theme' && !state.isThemeMenuActive
-            );
+
+            const nextIsThemeMenuActive = mainMenuItem.name === 'theme'
+              && !state.isThemeMenuActive;
+
+            toggleThemeMenu(dispatch)(nextIsThemeMenuActive);
           }}
         >
           {mainMenuItem.label}

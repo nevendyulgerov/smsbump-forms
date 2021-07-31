@@ -1,8 +1,19 @@
 .side-menu {
-  position: relative;
+  position: sticky;
+  left: 0;
   display: flex;
   width: 235px;
   align-items: stretch;
   flex-direction: column;
   background-color: #ffffff;
+}
+
+.side-menu.side-menu--active {
+  position: relative;
+}
+
+@media (max-width: 620px) {
+  .side-menu {
+    width: 80px;
+  }
 }

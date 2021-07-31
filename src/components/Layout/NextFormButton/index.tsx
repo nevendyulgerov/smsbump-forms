@@ -9,7 +9,11 @@ const NextFormButton: FC = () => (
     borderless
   >
     <div className="next-form-button__col">
-      Next Form 1/4
+      Next Form
+    </div>
+
+    <div className="next-form-button__col">
+      1/4
     </div>
 
     <div className="next-form-button__col">
