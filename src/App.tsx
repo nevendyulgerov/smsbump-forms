@@ -1,4 +1,5 @@
 import React, { FC } from 'react';
+import { IntlProvider } from 'react-intl';
 import {
   Body,
   Container,
@@ -12,7 +13,6 @@ import {
   SubHeader,
   ThemeMenu
 } from './components/Layout';
-import { IntlProvider } from 'react-intl';
 
 const App: FC = () => (
   <IntlProvider
