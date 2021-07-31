@@ -43,6 +43,11 @@
   stroke: #ffffff;
 }
 
+.next-form-button.button--primary:hover {
+  color: #ffffff;
+  background-color: #6f7bc6;
+}
+
 @media (max-width: 620px) {
   .next-form-button {
     min-width: 80px;

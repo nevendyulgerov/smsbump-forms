@@ -28,12 +28,27 @@
   color: #ffffff;
   border: 1px solid #606dc5;
   background-color: #606dc5;
+  transition: all cubic-bezier(0.55, 0, 0.1, 1) 0.15s;
+}
+
+.button.button--primary:hover {
+  color: #606dc5;
+  border: 1px solid #606dc5;
+  background-color: #ffffff;
+  transition: all cubic-bezier(0.55, 0, 0.1, 1) 0.15s;
 }
 
 .button.button--primary.button--outlined {
   color: #606dc5;
   border: 1px solid #606dc5;
   background-color: transparent;
+}
+
+.button.button--primary.button--outlined:hover {
+  color: #ffffff;
+  border: 1px solid #606dc5;
+  background-color: #606dc5;
+  transition: all cubic-bezier(0.55, 0, 0.1, 1) 0.15s;
 }
 
 .button.button--secondary {
@@ -45,4 +60,11 @@
   color: #212b35;
   border: 1px solid #212b35;
   background-color: transparent;
+}
+
+.button.button--secondary.button--outlined:hover {
+  color: #ffffff;
+  border: 1px solid #212b35;
+  background-color: #212b35;
+  transition: all cubic-bezier(0.55, 0, 0.1, 1) 0.15s;
 }

@@ -99,6 +99,17 @@
   padding-right: 26px;
 }
 
+.subheader .subheader__tabs .button--primary:hover {
+  color: #ffffff;
+  background-color: #6f7bc6;
+}
+
+.subheader .subheader__tabs .button--primary.button--outlined:hover {
+  color: #606dc5;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
 .subheader .subheader__tabs .subheader__tabs-button:last-child {
   font-family: 'Helvetica Neue Light', sans-serif;
 }

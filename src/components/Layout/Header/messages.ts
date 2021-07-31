@@ -14,5 +14,9 @@ export default defineMessages({
   exit: {
     id: `${scope}.exit`,
     defaultMessage: 'Exit'
+  },
+  editForm: {
+    id: `${scope}.editForm`,
+    defaultMessage: 'Edit {form}'
   }
 });
