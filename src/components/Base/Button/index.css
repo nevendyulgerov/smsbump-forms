@@ -54,6 +54,7 @@
 .button.button--secondary {
   color: #ffffff;
   background-color: #212b35;
+  transition: all cubic-bezier(0.55, 0, 0.1, 1) 0.15s;
 }
 
 .button.button--secondary.button--outlined {
