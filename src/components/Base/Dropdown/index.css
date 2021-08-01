@@ -12,6 +12,15 @@
   border: 1px solid #212b35;
 }
 
+.dropdown .dropdown__button:hover .dropdown__button-text {
+  color: #606dc5;
+}
+
+.dropdown .dropdown__button:hover .icon {
+  fill: #606dc5;
+  stroke: #606dc5;
+}
+
 .dropdown .dropdown__button > * {
   pointer-events: none;
 }
