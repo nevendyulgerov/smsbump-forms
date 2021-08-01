@@ -4,8 +4,8 @@ import themeMenuItems from '../../../config/themeMenuItems';
 import { AppContext } from '../../../context';
 import { setTheme } from '../../../context/actions';
 import { ThemeButton } from '../../Base';
-import './index.css';
 import messages from './messages';
+import './index.css';
 
 const ThemeMenu: FC = () => {
   const [state, dispatch] = useContext(AppContext);

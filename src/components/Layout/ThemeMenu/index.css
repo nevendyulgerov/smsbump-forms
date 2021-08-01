@@ -53,3 +53,20 @@
   background-color: #0122a5;
   animation: FadeInUp 0.4s 1 ease;
 }
+
+@media (max-width: 620px) {
+  .theme-menu .theme-menu__button {
+    width: 120px;
+    height: auto;
+  }
+}
+
+@media (max-width: 320px) {
+  .theme-menu .theme-menu__button {
+    width: 100px;
+  }
+
+  .theme-menu .theme-menu__button .theme-button__text {
+    font-size: 12px;
+  }
+}

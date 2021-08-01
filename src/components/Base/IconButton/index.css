@@ -32,6 +32,15 @@
   stroke: #c3cfd8;
 }
 
+.icon-button:not([disabled]):hover .icon {
+  fill: #606dc5;
+  stroke: #606dc5;
+}
+
+.icon-button:not([disabled]):hover .icon-button__text {
+  color: #606dc5;
+}
+
 .icon-button[disabled] .icon-button__text {
   color: #c3cfd8;
 }

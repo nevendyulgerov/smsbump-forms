@@ -17,7 +17,8 @@
 }
 
 .dropdown .icon {
-  padding: 10px 16px;
+  width: 0.85rem;
+  padding: 10px 15px;
 }
 
 .dropdown .dropdown__button-text {

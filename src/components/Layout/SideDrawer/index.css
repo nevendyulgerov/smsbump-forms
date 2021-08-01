@@ -21,6 +21,16 @@
   .side-drawer.side-drawer--active {
     top: 69px;
     left: 80px;
+    width: 272px;
+    transition: all cubic-bezier(0.55, 0, 0.1, 1) 0.3s;
+  }
+}
+
+@media (max-width: 320px) {
+  .side-drawer.side-drawer--active {
+    top: 69px;
+    left: 80px;
+    width: 232px;
     transition: all cubic-bezier(0.55, 0, 0.1, 1) 0.3s;
   }
 }

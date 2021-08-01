@@ -3,6 +3,7 @@
   "components.Layout.Header.editForm": "Edit {form}",
   "components.Layout.Header.exit": "Exit",
   "components.Layout.Header.formCount": "Form {count}",
+  "components.Layout.Header.goToSmsBumpWebsite": "Go to SMSBump website",
   "components.Layout.MainMenu.buttonField": "Button Field",
   "components.Layout.MainMenu.checkbox": "Checkbox",
   "components.Layout.MainMenu.closeButton": "Close Button",

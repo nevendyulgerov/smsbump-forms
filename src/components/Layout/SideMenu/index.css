@@ -9,10 +9,6 @@
   z-index: 40;
 }
 
-.side-menu.side-menu--active {
-  position: relative;
-}
-
 @media (max-width: 620px) {
   .side-menu {
     width: 80px;

@@ -15,10 +15,7 @@ import {
 } from './components/Layout';
 
 const App: FC = () => (
-  <IntlProvider
-    locale="en"
-    messages={{}}
-  >
+  <IntlProvider locale="en">
     <Container>
       <Header />
       <SubHeader />
