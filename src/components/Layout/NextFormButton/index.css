@@ -5,6 +5,7 @@
   padding: 20px;
   border-radius: 0;
   background-color: #f4f6f8;
+  z-index: 40;
 }
 
 .next-form-button .next-form-button__col {
