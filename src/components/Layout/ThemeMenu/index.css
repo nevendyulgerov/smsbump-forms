@@ -1,5 +1,6 @@
 .theme-menu {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   padding: 15px;
   background-color: #f7f7f7;
